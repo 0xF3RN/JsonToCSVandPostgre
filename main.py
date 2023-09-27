@@ -30,7 +30,6 @@ def add_to_postgre(json_data: dict):
             ('{json_data["md5"]}', '{json_data["sha256"]}', '{json_data["domain"]}');
         """)
         cur.close()
-        cur.close()
         print(f"[INFO] Data has been added to PostgreSQL: {json_data}")
     except Exception as _e:
         print(_e)
@@ -44,6 +43,7 @@ def get_existing_data(csv_file="data.csv"):
             for row in reader:
                 record_tuple = (row["md5"], row["sha256"], row["domain"])
                 existing_data.add(record_tuple)
+#       postgres existing data?
         return existing_data
     except Exception:
         return ()
