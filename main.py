@@ -43,7 +43,6 @@ def get_existing_data(csv_file="data.csv"):
             for row in reader:
                 record_tuple = (row["md5"], row["sha256"], row["domain"])
                 existing_data.add(record_tuple)
-#       postgres existing data?
         return existing_data
     except Exception:
         return ()
@@ -72,7 +71,7 @@ def json_reader_and_validator(json_file="data.json"):
                         data_to_check = (data_key["md5"], data_key["sha256"], data_key["domain"])
                         existing_data = get_existing_data()
                         if data_to_check in existing_data:
-                            print(f"[INFO] Already existing: {data_to_check}")
+                            print(f"[INFO] Already exists: {data_to_check}")
                         else:
                             add_to_csv(data_key)
                             add_to_postgre(data_key)
