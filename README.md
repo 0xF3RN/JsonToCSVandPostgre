@@ -104,7 +104,7 @@ python main.py
 | Функция                | Описание|
 |------------------------|-----------|
 | `add_to_postgre(json_data: dict)` | Adds data to PostgreSQL. |
-| `get_existing_data(csv_file="data.csv")`| Returns unique records from a csv file. |
+| `get_existing_data(csv_file="data.csv")`| Returns unique records. |
 | `add_to_csv(json_data: dict, csv_file="data.csv")`| Adds data to a CSV file. |
 | `json_reader_and_validator(json_file="data.json")` | Reads jsons and validates them. |
 | `main()`| Main function. |
