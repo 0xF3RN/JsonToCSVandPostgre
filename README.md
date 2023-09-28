@@ -19,12 +19,11 @@ git clone https://github.com/cutecei/JsonToCSVandPostgre.git
 cd JsonToCSVandPostgre
 ```
 
-3) Install the project dependencies:
+3) Make sure you have Python 3.10 installed on your system and install the project dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
-   Make sure you have Python 3.10 installed on your system.
 
 4) Run PostgreSQL
 
