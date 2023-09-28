@@ -99,6 +99,15 @@ python main.py
    [INFO] Already exists: ('33333333333333333333333333333333', '3333333333333333333333333333333333333333333333333333333333333333', 'blog.example.net')
    [INFO] Already exists: ('77777777777777777777777777777777', '7777777777777777777777777777777777777777777777777777777777777777', 'blog.example.net')
    ```
+## Function Descriptions
+
+| Функция                | Описание|
+|------------------------|-----------|
+| `add_to_postgre(json_data: dict)` | Adds data to PostgreSQL. |
+| `get_existing_data(csv_file="data.csv")`| Returns unique records from a csv file. |
+| `add_to_csv(json_data: dict, csv_file="data.csv")`| Adds data to a CSV file. |
+| `json_reader_and_validator(json_file="data.json")` | Reads jsons and validates them. |
+| `main()`| Main function. |
 
 
    
