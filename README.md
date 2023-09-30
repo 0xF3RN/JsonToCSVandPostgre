@@ -109,7 +109,7 @@ python main.py
    ```
 ## Function Descriptions
 
-| Функция                | Описание|
+| Function | Description |
 |------------------------|-----------|
 | `add_to_postgre(json_data: dict)` | Adds data to PostgreSQL. |
 | `get_existing_data(csv_file="data.csv")`| Returns unique records. |
